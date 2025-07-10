@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <title>Harmony Meadows: Cutie Quest</title>
+        <!-- load in the p5 core library -->
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+
+        <!-- load in the p5 sound library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.js"></script>
+    
+        <!-- your custom sketch code -->
+        <script src="sketch.js"></script>
+    
+        <!-- custom CSS styles for this page -->
+        <style>
+           @font-face {
+            font-family: mainFont;
+            src: url('fonts/transmaidens-font/TransmaidensItalic-OKdd.ttf');
+            }
+           @font-face {
+            font-family: secondFont;
+            src: url('fonts/old-school-adventures-font/OldSchoolAdventures-42j9.ttf');
+            }
+          body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFCCE8;
+          }
+          h1 {
+            font-family: mainFont;
+            color: #f186c0;
+            text-align: center;
+            width: 600px;
+            background-color: #fffcfd;
+            border: 5px solid #fffcfd;
+            border-radius: 15px;
+          }
+          h1:hover {
+            color: #FFCCE8;
+            font-size: 35px;
+          }
+          canvas {
+            border: 10px outset #AA7657;
+          }
+          #selectP, button {
+            margin: 10px;
+            width: 200px;
+            height: 40px;
+            border: 5px outset #AA7657;
+            border-radius: 15px;
+            text-align: center;
+            font-family: mainFont;
+            font-size: 18px;
+            color: #FFCCE8;
+            background-color: #fffcfd;
+          }
+          #selectP:hover, button:hover {
+            color: #f186c0;
+            background-color:aliceblue;
+          }
+          footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            background-color: #fffcfd;
+            font-size: 10px;
+            font-family: secondFont;
+            color: #f186c0;
+            opacity: 0.75;
+            width: 100%;
+          }
+          footer:hover {
+            opacity: 1;
+            font-size: 12px;
+          }
+          #credit {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+          }
+          h2 {
+            font-family: mainFont;
+            color: #f186c0;
+            text-align: center;
+            width: 300px;
+            background-color: #fffcfd;
+            border: 5px solid #fffcfd;
+            border-radius: 15px;
+          }
+          p {
+            width: 300px;
+            height: 725px;
+            background-color: #fffcfd;
+            border: 10px solid #fffcfd;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 10px;
+            font-family: secondFont;
+          }
+          #start {
+            font-family: mainFont;
+            color: #f186c0;
+            text-align: center;
+            text-decoration: none;
+          }
+          #info1 {
+            height: 100px;
+          }
+          a {
+            text-decoration: none;
+          }
+          #creditH2:hover {
+            color:#9ce0f7;
+            font-size: 30px;
+          }
+          
+        </style>
+  </head>
+  <body>
+    <h1><a id="start" href="index.html">Harmony Meadows: Cutie Quest</a></h1>
+
+    <div id="canvasDiv"></div>
+
+    <div id="characterChoose">
+      <select id="selectP" name="selectP">
+        <option value="1">Pink Unicorn</option>
+        <option value="2">Purple & Green Pegasus</option>
+        <option value="3">Purple & White Pegasus</option>
+        <option value="4">Black Pegasus</option>
+        <option value="5">Blue & Red Unicorn</option>
+        <option value="6">Yellow & Purple Earth Pony</option>
+        <option value="7">Red & Orange Unicorn</option>
+        <option value="8">Yellow & Red Earth Pony</option>
+        <option value="9">White Earth Pony</option>
+
+      </select>
+      <button onclick="startGame();">Start Game</button>
+
+    </div>
+      <h2>Instructions</h2>
+      <p id="info1">Welcome to Harmony Meadows: Cutie Quest! In this game, you will play
+        mini-games to find out YOUR own Cutie Mark! Pick your pony, start the game,
+        and use WASD to walk up to ponies to start the game. Complete all 6 quests for your
+        personalized Cutie Mark.
+      </p>
+      <img src="luna.png">
+      <a href="credit.html"><h2 id="creditH2">Click For Credits</h2></a>
+      <img src="celestia.png">
+
+    <footer>Developed by Sara Gizabi & Sahar Bueno-Abdala</footer>
+  </body>
+</html>
+
+
