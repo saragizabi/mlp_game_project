@@ -2,7 +2,7 @@
 
 ## Final Documentation ##
 
-For our midterm project, we were able to create a My Little Pony themed quest game called Harmony Meadows: Cutie Quest. In this game, the user is first met with the start screen, where they are able to select their own pony design out of 9 options using an HTML select element. 
+For our project, we were able to create a My Little Pony themed quest game called Harmony Meadows: Cutie Quest. In this game, the user is first met with the start screen, where they are able to select their own pony design out of 9 options using an HTML select element. 
 
 Upon clicking the “Start Game” button, the player will be taken into a pony village where they may meet with 3 of the villagers by walking up to them. Each of these villagers assigns the player with a specific quest for the player to complete. Each of these quests is presented in the form of a mini-game and there is a timer implemented for each game that counts how long it takes for the user to complete the game. The objective is to receive a cutie mark after completing all the mini games. The cutie mark the player receives is decided using the combined performance of all mini-games. 
 
