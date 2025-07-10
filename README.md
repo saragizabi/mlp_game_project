@@ -1,4 +1,4 @@
-# mlp_game_project
+# MLP Game Project (p5.js)
 
 ## Final Documentation ##
 
